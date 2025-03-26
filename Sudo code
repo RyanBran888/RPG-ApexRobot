@@ -1,0 +1,13 @@
+import gyro or wtv
+
+on start:
+  global variable resting = starting gyro position.xAxis();
+
+continous:
+  if(resting != gyro position.xAxis())
+{
+  var change = resting - position.xAxis();
+  servo.rotate(change);
+}
+
+convert to correct syntax
